@@ -51,7 +51,9 @@
 			<Id>1554314924553</Id>
 			<Name><![CDATA[Main]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
-			<StartupCode><![CDATA[set_active_view_area(viewArea2D);]]></StartupCode>
+			<Import><![CDATA[import java.util.stream.Collectors;]]></Import>
+			<StartupCode><![CDATA[set_active_view_area(viewArea2D);
+filterMallSections();]]></StartupCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1554314924552</Id>
@@ -387,6 +389,201 @@ MallSectionType.Fashion
 					</Properties>
 
 				</Variable>
+				<Variable Class="CollectionVariable">
+					<Id>1555224138071</Id>
+					<Name><![CDATA[abstractWallsFloor3]]></Name>
+					<X>140</X><Y>-130</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
+						<ElementClass><![CDATA[AbstractWall]]></ElementClass>
+						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+						<CollectionInitializer Class="CodeValue">
+							<Code><![CDATA[{ wall71, wall71, wall72, wall72, wall72, wall72, wall74, wall76, wall76, wall77, wall77, wall77, wall77, wall77, wall78, wall78, wall79, wall79, wall80, wall81, wall82, wall82, wall84, wall84, wall84, wall84, wall84, wall75, wall75, wall75, wall75, wall75, wall75, wall75, wall75 }]]></Code>
+						</CollectionInitializer>
+					</Properties>
+
+				</Variable>
+				<Variable Class="CollectionVariable">
+					<Id>1555224138073</Id>
+					<Name><![CDATA[targetLineFloor3]]></Name>
+					<X>140</X><Y>-110</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
+						<ElementClass><![CDATA[TargetLine]]></ElementClass>
+						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+						<CollectionInitializer Class="CodeValue">
+							<Code><![CDATA[{ targetLineFloor3_1, targetLineFloor3_2, targetLineFloor3_3, targetLineFloor3_4, targetLineFloor3_5, targetLineFloor3_6, targetLineFloor3_7, targetLineFloor3_8, targetLineFloor3_9, targetLineFloor3_10, targetLineFloor3_11, targetLineFloor3_12, targetLineFloor3_13, targetLineFloor3_14, targetLineFloor3_15, targetLineFloor3_16, targetLineFloor3_17, targetLineFloor3_18, targetLineFloor3_19, targetLineFloor3_20, targetLineFloor3_21, targetLineFloor3_22, targetLineFloor3_23, targetLineFloor3_24, targetLineFloor3_25, targetLineFloor3_26, targetLineFloor3_27, targetLineFloor3_28, targetLineFloor3_29, targetLineFloor3_30, targetLineFloor3_31, targetLineFloor3_32, targetLineFloor3_33, targetLineFloor3_34, targetLineFloor3_35 }]]></Code>
+						</CollectionInitializer>
+					</Properties>
+
+				</Variable>
+				<Variable Class="CollectionVariable">
+					<Id>1555224138075</Id>
+					<Name><![CDATA[mallSectionType3]]></Name>
+					<X>140</X><Y>-90</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
+						<ElementClass><![CDATA[MallSectionType]]></ElementClass>
+						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+						<CollectionInitializer Class="CodeValue">
+							<Code><![CDATA[{ 
+MallSectionType.Service,
+MallSectionType.Service,
+MallSectionType.Service,
+MallSectionType.Service,
+MallSectionType.Service,
+MallSectionType.Service,
+MallSectionType.Service,
+MallSectionType.Service,
+MallSectionType.Service,
+MallSectionType.Fashion,
+MallSectionType.Fashion,
+MallSectionType.Fashion,
+MallSectionType.Fashion,
+MallSectionType.Fashion,
+MallSectionType.Fashion,
+MallSectionType.Fashion,
+MallSectionType.Service,
+MallSectionType.Service,
+MallSectionType.Cinema,
+MallSectionType.Service,
+MallSectionType.Cafe,
+MallSectionType.Cafe,
+MallSectionType.Cafe,
+MallSectionType.Cafe,
+MallSectionType.Cafe,
+MallSectionType.Cafe,
+MallSectionType.Cafe,
+MallSectionType.Cafe,
+MallSectionType.Cafe,
+MallSectionType.Cafe,
+MallSectionType.Cafe,
+MallSectionType.Cafe,
+MallSectionType.Cafe,
+MallSectionType.Cafe,
+MallSectionType.Cafe
+}]]></Code>
+						</CollectionInitializer>
+					</Properties>
+
+				</Variable>
+				<Variable Class="CollectionVariable">
+					<Id>1555225878517</Id>
+					<Name><![CDATA[collectionMallSectionsHypermarket]]></Name>
+					<X>300</X><Y>-340</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
+						<ElementClass><![CDATA[MallSection]]></ElementClass>
+						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+					</Properties>
+
+				</Variable>
+				<Variable Class="CollectionVariable">
+					<Id>1555225923262</Id>
+					<Name><![CDATA[collectionMallSectionsService]]></Name>
+					<X>300</X><Y>-320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
+						<ElementClass><![CDATA[MallSection]]></ElementClass>
+						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+					</Properties>
+
+				</Variable>
+				<Variable Class="CollectionVariable">
+					<Id>1555225935584</Id>
+					<Name><![CDATA[collectionMallSectionsFashion]]></Name>
+					<X>300</X><Y>-300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
+						<ElementClass><![CDATA[MallSection]]></ElementClass>
+						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+					</Properties>
+
+				</Variable>
+				<Variable Class="CollectionVariable">
+					<Id>1555225943890</Id>
+					<Name><![CDATA[collectionMallSectionsShoe]]></Name>
+					<X>300</X><Y>-280</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
+						<ElementClass><![CDATA[MallSection]]></ElementClass>
+						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+					</Properties>
+
+				</Variable>
+				<Variable Class="CollectionVariable">
+					<Id>1555225956325</Id>
+					<Name><![CDATA[collectionMallSectionsCafe]]></Name>
+					<X>300</X><Y>-260</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
+						<ElementClass><![CDATA[MallSection]]></ElementClass>
+						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+					</Properties>
+
+				</Variable>
+				<Variable Class="CollectionVariable">
+					<Id>1555225966676</Id>
+					<Name><![CDATA[collectionMallSectionsCinema]]></Name>
+					<X>300</X><Y>-240</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
+						<ElementClass><![CDATA[MallSection]]></ElementClass>
+						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+					</Properties>
+
+				</Variable>
+				<Variable Class="CollectionVariable">
+					<Id>1555225975680</Id>
+					<Name><![CDATA[collectionMallSectionsHighEnd]]></Name>
+					<X>300</X><Y>-220</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
+						<ElementClass><![CDATA[MallSection]]></ElementClass>
+						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+					</Properties>
+
+				</Variable>
 			</Variables>
 			<Connectors>
 				<Connector>
@@ -717,6 +914,82 @@ return collectionEnterLines.get(targetLineIndex);]]></Body>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[int targetLineIndex = uniform_discr(collectionEnterLines.size()-1);
 return collectionEnterLines.get(targetLineIndex);]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1555225866773</Id>
+					<Name><![CDATA[filterMallSections]]></Name>
+					<X>300</X><Y>-370</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[List<AgentList<MallSection>> foorsList = new ArrayList<AgentList<MallSection>>();
+foorsList.add(mallSectionFloor1);
+foorsList.add(mallSectionFloor2);
+foorsList.add(mallSectionFloor3);
+
+
+for(AgentList<MallSection> floor: foorsList){
+	collectionMallSectionsHypermarket
+		.addAll(
+			floor
+			.stream()
+			.filter(e->e.sectionType==Hypermarket)
+			.collect(Collectors.toList())
+		);
+		
+	collectionMallSectionsService
+		.addAll(
+			floor
+			.stream()
+			.filter(e->e.sectionType==Service)
+			.collect(Collectors.toList())
+		);
+		
+	collectionMallSectionsFashion
+		.addAll(
+			floor
+			.stream()
+			.filter(e->e.sectionType==Fashion)
+			.collect(Collectors.toList())
+		);
+		
+	collectionMallSectionsShoe
+		.addAll(
+			floor
+			.stream()
+			.filter(e->e.sectionType==Shoe)
+			.collect(Collectors.toList())
+		);
+		
+	collectionMallSectionsCafe
+		.addAll(
+			floor
+			.stream()
+			.filter(e->e.sectionType==Cafe)
+			.collect(Collectors.toList())
+		);
+	
+	collectionMallSectionsCinema
+		.addAll(
+			floor
+			.stream()
+			.filter(e->e.sectionType==Cinema)
+			.collect(Collectors.toList())
+		);
+		
+	collectionMallSectionsHighEnd
+		.addAll(
+			floor
+			.stream()
+			.filter(e->e.sectionType==HighEndFashion)
+			.collect(Collectors.toList())
+		);
+	
+}
+]]></Body>
 				</Function>
 			</Functions>
 			<AgentLinks>
@@ -1859,6 +2132,91 @@ return collectionEnterLines.get(targetLineIndex);]]></Body>
 					<QuantityColumn>
 					</QuantityColumn>
 				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1555224096405</Id>
+					<Name><![CDATA[mallSectionFloor3]]></Name>
+					<X>50</X><Y>-130</Y>
+					<Label><X>-40</X><Y>-30</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[mall_demo]]></PackageName>
+						<ClassName><![CDATA[MallSection]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[mall_demo]]></PackageName>
+							<ClassName><![CDATA[MallSection]]></ClassName>
+							<ItemName><![CDATA[1554843723681]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[abstractWall]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[abstractWallsFloor3.get(index)]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[targetLine]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[targetLineFloor3.get(index)]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[sectionType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[mallSectionType3.get(index)]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[floorIdx]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[2]]></Code>
+							</Value>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>true</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[abstractWallsFloor3.size()]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InEnvironment>true</InEnvironment>	
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
 			</EmbeddedObjects>
 
 			<Shapes>
@@ -2037,28 +2395,6 @@ return collectionEnterLines.get(targetLineIndex);]]></Body>
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
-				<Image>
-					<Id>1554355027281</Id>
-					<Name><![CDATA[image]]></Name>
-					<X>-980</X><Y>100</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Width>920</Width>
-					<Height>270</Height>
-					<Rotation>0.0</Rotation>
-					<ImageFiles>
-						<ImageResourceReference>
-							<PackageName><![CDATA[mall_demo]]></PackageName>
-							<ClassName><![CDATA[dana1.png]]></ClassName>
-						</ImageResourceReference>
-					</ImageFiles>
-					<OriginalSize>false</OriginalSize>
-				</Image>
 				<Image>
 					<Id>1554356365705</Id>
 					<Name><![CDATA[image3]]></Name>
@@ -6536,6 +6872,604 @@ return collectionEnterLines.get(targetLineIndex);]]></Body>
 					<Width>8</Width>
 					<Height>22</Height>
 				</RectangleWall>
+				<TargetLine>
+					<Id>1555224197187</Id>
+					<Name><![CDATA[targetLineFloor3_1]]></Name>
+					<X>180</X><Y>860</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>20</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224209294</Id>
+					<Name><![CDATA[targetLineFloor3_2]]></Name>
+					<X>180</X><Y>890</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>20</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224364264</Id>
+					<Name><![CDATA[targetLineFloor3_3]]></Name>
+					<X>230</X><Y>865</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>65</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224401817</Id>
+					<Name><![CDATA[targetLineFloor3_4]]></Name>
+					<X>375</X><Y>825</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>25</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224405484</Id>
+					<Name><![CDATA[targetLineFloor3_5]]></Name>
+					<X>410</X><Y>825</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>25</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224407151</Id>
+					<Name><![CDATA[targetLineFloor3_6]]></Name>
+					<X>440</X><Y>825</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>25</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224490137</Id>
+					<Name><![CDATA[targetLineFloor3_7]]></Name>
+					<X>260</X><Y>885</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>35</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224557215</Id>
+					<Name><![CDATA[targetLineFloor3_8]]></Name>
+					<X>475</X><Y>825</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>25</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224560029</Id>
+					<Name><![CDATA[targetLineFloor3_9]]></Name>
+					<X>540</X><Y>825</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>25</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224606191</Id>
+					<Name><![CDATA[targetLineFloor3_10]]></Name>
+					<X>595</X><Y>815</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>-15</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224610525</Id>
+					<Name><![CDATA[targetLineFloor3_11]]></Name>
+					<X>635</X><Y>795</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224616955</Id>
+					<Name><![CDATA[targetLineFloor3_12]]></Name>
+					<X>670</X><Y>805</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>15</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224621905</Id>
+					<Name><![CDATA[targetLineFloor3_13]]></Name>
+					<X>715</X><Y>825</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>30</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224627361</Id>
+					<Name><![CDATA[targetLineFloor3_14]]></Name>
+					<X>775</X><Y>825</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>30</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224742118</Id>
+					<Name><![CDATA[targetLineFloor3_15]]></Name>
+					<X>820</X><Y>825</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>5</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224747302</Id>
+					<Name><![CDATA[targetLineFloor3_16]]></Name>
+					<X>865</X><Y>865</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224804687</Id>
+					<Name><![CDATA[targetLineFloor3_17]]></Name>
+					<X>950</X><Y>865</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224807910</Id>
+					<Name><![CDATA[targetLineFloor3_18]]></Name>
+					<X>1015</X><Y>865</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224930216</Id>
+					<Name><![CDATA[targetLineFloor3_19]]></Name>
+					<X>1075</X><Y>920</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>-15</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555224976542</Id>
+					<Name><![CDATA[targetLineFloor3_20]]></Name>
+					<X>945</X><Y>910</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>25</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225028659</Id>
+					<Name><![CDATA[targetLineFloor3_21]]></Name>
+					<X>895</X><Y>910</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225032462</Id>
+					<Name><![CDATA[targetLineFloor3_22]]></Name>
+					<X>850</X><Y>910</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225034796</Id>
+					<Name><![CDATA[targetLineFloor3_23]]></Name>
+					<X>795</X><Y>910</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225036473</Id>
+					<Name><![CDATA[targetLineFloor3_24]]></Name>
+					<X>770</X><Y>910</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225038450</Id>
+					<Name><![CDATA[targetLineFloor3_25]]></Name>
+					<X>735</X><Y>910</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225040079</Id>
+					<Name><![CDATA[targetLineFloor3_26]]></Name>
+					<X>710</X><Y>910</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225042411</Id>
+					<Name><![CDATA[targetLineFloor3_27]]></Name>
+					<X>665</X><Y>910</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225189222</Id>
+					<Name><![CDATA[targetLineFloor3_28]]></Name>
+					<X>595</X><Y>880</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>10</X><Y>10</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225193963</Id>
+					<Name><![CDATA[targetLineFloor3_29]]></Name>
+					<X>550</X><Y>870</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225198370</Id>
+					<Name><![CDATA[targetLineFloor3_30]]></Name>
+					<X>520</X><Y>870</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225207356</Id>
+					<Name><![CDATA[targetLineFloor3_31]]></Name>
+					<X>490</X><Y>875</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>-5</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225211948</Id>
+					<Name><![CDATA[targetLineFloor3_32]]></Name>
+					<X>470</X><Y>885</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>-5</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225214813</Id>
+					<Name><![CDATA[targetLineFloor3_33]]></Name>
+					<X>440</X><Y>885</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225219703</Id>
+					<Name><![CDATA[targetLineFloor3_34]]></Name>
+					<X>410</X><Y>885</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1555225221715</Id>
+					<Name><![CDATA[targetLineFloor3_35]]></Name>
+					<X>385</X><Y>885</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>15</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<RectangleWall>
+					<Id>1555225544456</Id>
+					<Name><![CDATA[wall94]]></Name>
+					<X>384</X><Y>870</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-3308225</LineColor>
+					<LineWidth>2</LineWidth>
+					<LineMaterial>null</LineMaterial>
+					<FillingType>HATCHED_AREA</FillingType>
+					<ZHeight>4</ZHeight>
+					<Rotation>0.0</Rotation>
+					<Width>41</Width>
+					<Height>7</Height>
+				</RectangleWall>
+				<RectangleWall>
+					<Id>1555225579788</Id>
+					<Name><![CDATA[wall95]]></Name>
+					<X>855</X><Y>880</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-3308225</LineColor>
+					<LineWidth>2</LineWidth>
+					<LineMaterial>null</LineMaterial>
+					<FillingType>HATCHED_AREA</FillingType>
+					<ZHeight>4</ZHeight>
+					<Rotation>0.0</Rotation>
+					<Width>41</Width>
+					<Height>7</Height>
+				</RectangleWall>
 			</Shapes>
 
 					<Z>0</Z>
@@ -7514,10 +8448,6 @@ return collectionEnterLines.get(targetLineIndex);]]></Body>
 		</SimulationExperiment>	
 	</Experiments>
 	<ModelResources>
-		<Resource>
-			<Path><![CDATA[dana1.png]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-		</Resource>
 		<Resource>
 			<Path><![CDATA[2019-04-04 at 08-37-57.png]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
